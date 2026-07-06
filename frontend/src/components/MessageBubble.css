@@ -1,0 +1,91 @@
+.message-row {
+  display: flex;
+  margin: 24px 0;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+}
+
+.message-row.ai {
+  justify-content: flex-start;
+}
+
+.message-content {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+}
+
+.message-row.user .message-content {
+  justify-content: flex-end;
+}
+
+.message-box {
+  position: relative;
+  max-width: 760px;
+  width: fit-content;
+
+  background: #1e293b;
+  color: #f8fafc;
+
+  padding: 22px;
+  border-radius: 18px;
+
+  line-height: 1.8;
+  font-size: 16px;
+
+  overflow-x: auto;
+
+  box-shadow: 0 12px 35px rgba(0,0,0,.3);
+}
+
+.message-row.user .message-box {
+  background: #2563eb;
+}
+
+.message-avatar {
+  margin-top: 8px;
+}
+
+.message-box h1,
+.message-box h2,
+.message-box h3 {
+  margin-bottom: 15px;
+}
+
+.message-box p {
+  margin: 12px 0;
+}
+
+.message-box ul,
+.message-box ol {
+  margin-left: 22px;
+}
+
+.message-box code {
+  background: #111827;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  border: none;
+  background: transparent;
+
+  color: #cbd5e1;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  color: white;
+}

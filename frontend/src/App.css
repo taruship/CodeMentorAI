@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  font-family: Inter, Arial, sans-serif;
+  color: white;
+}
+
+#root {
+  height: 100vh;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  background: #111827;
+  border-bottom: 1px solid #1e293b;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 30px;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 280px;
+  background: #111827;
+  border-right: 1px solid #1e293b;
+  overflow-y: auto;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.input-area {
+  border-top: 1px solid #1e293b;
+  padding: 20px;
+  background: #111827;
+}
