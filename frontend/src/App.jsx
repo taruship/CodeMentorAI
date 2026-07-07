@@ -14,11 +14,14 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.get("http://127.0.0.1:8000/ask", {
-        params: {
-          prompt: question,
-        },
-      });
+     const res = await axios.get(
+  "https://codementorai-backend-vqry.onrender.com/ask",
+  {
+    params: {
+      prompt: question,
+    },
+  }
+);
 
       setMessages((prev) => [
         ...prev,
